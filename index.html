@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home work5</title>
+    <title>Home work6</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -391,16 +391,80 @@
               </li>
           </ul>
           </div>
+
+          <div class="subscribe">
+            <form class="feedback-email">
+              <h2 class="footer-link-title">подпишитесь на рассылку</h2>
+              <input type="email" class="email" name="email" placeholder="E-mail" />
+              <button type="submit" class="button subscribe-btn">
+                Подписаться
+                  <svg class="subscribe-icon-svg">
+                    <use href="./images/icons.svg#icon-send-instagram"></use>
+                  </svg>
+              </button>
+            </form>
+          </div>
+          
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="close-icon-svg">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <p class="modal-header">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <ul class="form-list list">
+            <li class="form-item">
+              <label class="lable">Имя
+                <input type="text" name="name" />
+                  <svg class="modal-icon-svg">
+                    <use href="./images/icons.svg#icon-person"></use>
+                  </svg>
+              </label>
+            </li>
+            <li class="form-item">
+              <label class="lable">Телефон
+                <input type="tel" name="tel" />
+                  <svg class="modal-icon-svg">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+              </label>
+            </li>
+            <li class="form-item">
+              <label class="lable">Почта
+                <input type="email" name="mail" />
+                  <svg class="modal-icon-svg">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
+              </label>
+            </li>
+            <li class="form-item">
+              <label class="lable">Комментарий
+                <textarea class="text-area" name="comment" cols="10" rows="4" placeholder="Введите текст"></textarea>
+              </label>
+            </li>
+          </ul>
+          <div class="check-box">
+            <label class="modal-check-label">
+              <input type="checkbox" name="accept" class="modal-check hidden" id="modal-check"/>
+              
+              <svg class="check-icon-svg" width="16" height="15"> 
+                <use href="./images/icons.svg#icon-full-check"></use>
+              </svg>
+              <span class="check-box-text">
+                Соглашаюсь с рассылкой и принимаю
+                <a class="contract" href=""> Условия договора</a></span>
+            </label>
+          </div>
+        
+          <button type="submit" class="button send">Отправить</button>
+        </form>
       </div>
     </div>
 
