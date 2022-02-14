@@ -998,7 +998,7 @@ a {
   transition: var(--animation);
 }
 
-.modal-check:hover + .check-icon-svg,
+
 .modal-check:checked + .check-icon-svg {
   border-color: transparent;
   background-color: var(--accent-color);
@@ -1008,6 +1008,7 @@ a {
   fill: var(--primary-white-color);
 }
 
+.modal-check:hover + .check-icon-svg,
 .modal-check:focus + .check-icon-svg {
   border-color: var(--accent-color);
 }
